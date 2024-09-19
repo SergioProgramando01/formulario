@@ -11,6 +11,17 @@ body {
     align-items: center;
 }
 
+.body-2 {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 1080;
+    height: 1515px;
+    background-color: #00d2d3;
+    background-image: url(img-heladeria.jpg);
+    justify-items: center;
+    align-items: center;
+}
+
 form {
     max-width: 700px;
     margin: 0 auto;
