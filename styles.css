@@ -109,7 +109,6 @@ button:hover {
     grid-template-rows: auto;
     justify-items: center;
     align-items: center;
-    border: 1px solid greenyellow;
 }
 
 .c1 {
