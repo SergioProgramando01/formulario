@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="c1">
+
+            <div>
+                <h3>Banner lateral 1 </h3>
+            </div>
+
+            <div>
+                <h1>Destapa la felicidad</h1>
+            </div>
+
+            <div>
+                <img src="refresco1.png" alt="refresh1">
+            </div>
+
+            <div>
+                <button class="button-3">
+                    <h3>Ingresa ahora</h3>
+                </button>
+            </div>
+
+        </div>
+
+        <div id="c2">
+            <div id="banner-top">
+                <h1>Banner Publicidad</h1>
+                <img src="refresco3.png" alt="refresh3">
+            </div>
+
+            <div>
+                <button class="button-gris">Option Menu 1</button>                
+            </div>
+
+            <div>
+                <button class="button-gris">Option Menu 2</button>
+            </div>
+
+            <div>
+                <button class="button-gris">Option Menu 3</button>
+            </div>
+
+            <div>
+                <button class="button-gris">Option Menu 4</button>
+            </div>
+
+            <div>
+                <button class="button-gris">Option Menu 5</button>
+            </div>
+
+            <div class="c6">
+                <form>
+                    <div>
+                    <!-- Nombre -->
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div>
+                    <!-- Id -->
+                    <label for="id">ID:</label>
+                    <input type="number" id="id" name="id" required>
+                    </div>
+
+                    <div>
+                    <!-- Sexo -->
+                    <label>Sexo:</label>
+                    <input type="radio" id="masculino" name="sexo" value="masculino" required>
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="femenino" name="sexo" value="femenino" required>
+                    <label for="femenino">Femenino</label>
+                    </div>
+
+                    <div>
+                    <!-- Fecha de nacimiento -->
+                    <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                    </div>
+
+                    <div>
+                    <!-- Ciudad -->
+                    <label for="ciudad">Elija ciudad de la zona metropolitana:</label>
+                    <select id="ciudad" name="ciudad" required>
+                        <option value="Cúcuta">Cúcuta</option>
+                        <option value="Los Patios">Los Patios</option>
+                        <option value="Villa del Rosario">Villa del Rosario</option>
+                        <option value="Zulia">Zulia</option>
+                        <option value="Otros">Otros</option>
+                    </select>
+                    </div>
+
+                    <div>
+                    <!-- Comentarios -->
+                    <label for="comentario">¿Desea dejar algún comentario?</label>
+                    <textarea id="comentario" name="comentario" rows="4"></textarea>                       
+                    </div>
+
+                    <div>
+                    <!-- Recibir promociones -->
+                    <label for="promociones">¿Desea recibir promociones?</label>
+                    <input type="radio" id="promociones-si" name="promociones" value="si" onclick="mostrarOpcionesPromocion(true)">
+                    <label for="promociones-si">Sí</label>
+                    <input type="radio" id="promociones-no" name="promociones" value="no" onclick="mostrarOpcionesPromocion(false)">
+                    <label for="promociones-no">No</label>
+                    </div>
+
+                    <!-- Opciones de promoción -->
+                    <div class="promo-options" id="promo-options">
+                        <label>¿Cómo desea recibir promociones?</label>
+                        <input type="checkbox" id="promocion-msn" name="promocion" value="msn">
+                        <label for="promocion-msn">MSN</label>
+                        <input type="checkbox" id="promocion-correo" name="promocion" value="correo">
+                        <label for="promocion-correo">Correo</label>
+                        <input type="checkbox" id="promocion-whatsapp" name="promocion" value="whatsapp">
+                        <label for="promocion-whatsapp">WhatsApp</label>
+                    </div>  
+
+                    <div>
+                    <!-- Botón enviar -->
+                    <button type="submit">Enviar</button>
+                    </div>  
+                </form>
+            </div>
+        </div>
+        <div id="c1">
+
+            <div>
+                <h3>Banner Lateral 2</h3>
+            </div>
+            <div>
+                <h1>El sabor de la vida</h1>
+            </div>
+            <div>
+                <img src="refresco2.png" alt="refresh2">
+            </div>
+
+            <div>
+                <button class="button-3">
+                    <h3>Ingresa ahora</h3>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

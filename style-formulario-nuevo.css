@@ -1,0 +1,307 @@
+body {
+    background-image: radial-gradient(circle at center, transparent 0%, transparent 90%, #f0f0f0 90%, #f0f0f0 100%);
+    background-size: 20px 20px;
+    font-family: 'Roboto', sans-serif;
+
+    @media (min-width: 150px) and (max-width: 991px) {
+        .container {
+          grid-template-columns: 1fr; /* One column */
+        }
+      
+        #banner-top {
+
+          height: 120px; /* Reduce the height of the banner */
+          background: linear-gradient(270deg, #f03a0d, #0ed2ec,rgb(224, 13, 172));
+          animation: gradientAnimation 9s ease infinite;
+            }
+
+
+
+        form {
+            width: 100%; /* Ancho completo */
+            max-width: 600px; /* Máximo ancho opcional */
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            background: linear-gradient(270deg, yellow,#0ed2ec,rgb(224, 13, 172));
+            animation: gradientAnimation 9s ease infinite;
+            box-shadow: 0 2px 10px #3e0673(0, 0, 0, 0.1);
+            }
+
+      @keyframes gradientAnimation {
+                  0% {
+                        background-position: 0% 50%;
+                  }
+                  50% {
+                        background-position: 100% 50%;
+                  }
+                  100% {
+                        background-position: 0% 50%;
+                  }
+            }
+        }
+      
+        #h1 {
+          font-size: 42px; /* Reduce the font size */
+        }
+      
+        #c1, #c3 {
+          width: 90%; /* Increase the width of the containers */
+          margin: 0 auto; /* Center the containers */
+        }
+      
+        img {
+          width: 80%; /* Make sure images take up the full width */
+        }
+      }  
+  
+  div {
+    gap: 20px;
+    height: auto;
+  }
+  
+  .container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    text-align:center;
+    justify-content: space-between;
+  }
+  
+  #banner-top {
+    grid-column: 1 / 6;
+    top:10px;
+    height: 150px;
+    width: auto;
+    background-image: linear-gradient(-12deg, #8a2be2 0%, #8a2be2 7%, #6f22b5 46%, #8a2be2 85%, #8a2be2 100%);
+  }
+  
+  #h1 {
+    width: auto; /* Ajuste para que no se salga */
+    height: auto;
+    font-size: 47px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Bebas";
+    filter: drop-shadow(-23.383px 13.5px 6.5px rgba(0,0,0,0.57));
+    overflow: hidden; /* Oculta cualquier contenido desbordado */
+  }
+  
+  #c1 {
+  
+    background-image: linear-gradient(-12deg, #8a2be2 0%, #8a2be2 7%, #6f22b5 46%, #8a2be2 85%, #8a2be2 100%);  display: flex; /* Convierte el contenedor en un contenedor flex */
+    flex-direction: column; /* Establece la dirección de los elementos como columna */
+    justify-content: space-between;
+    align-items: center;
+    width: 300px; /* Ancho del banner */
+    height: auto; /* Altura automática */
+    padding: 20px;
+    background-color: transparent; /* Fondo claro */
+    border-radius: 3px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el contenido */
+    transition: transform 0.3s ease; /* Suaviza la animación al pasar el mouse */
+    overflow: hidden; /* Evita que el contenido se desborde */
+    
+    }
+  
+  
+  
+  .button-3 {
+      width: 135px;
+      height: 72px;
+      border-radius: 13px;
+      filter: drop-shadow(-7.794px 4.5px 6.5px rgba(0, 0, 0, 0.57));
+      box-shadow: inset -3.464px 2px 2.5px rgba(216, 49, 49, 0.75);
+      background-image: linear-gradient(-12deg, #e94444 0%, #d83131 68%, #d83131 100%);
+      transition: all 0.3s ease-in-out; /* Aplica transición a todas las propiedades */
+    }
+  
+    
+  .button-3:active {
+      background-image: linear-gradient(-12deg, #60a4ff 0%, #60a4ff 100%);
+      transform: scale(0.95); /* Reduce ligeramente el tamaño */
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra interna */
+    }  
+  
+    
+  h1 {
+        font-size: 24px;
+        color: white;
+        margin: 10px 0;
+    }
+    
+  h3 {
+        font-size: 16px;
+        color: white;
+    }
+    
+  img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease; /* Suaviza la animación al hacer clic */
+      transform-origin: center center; /* Establece el punto de rotación en el centro de la imagen */
+    }
+    
+  img:hover {
+      transform: scale(1.15);
+    }
+    
+  img:active {
+      transform: scale(1.1) rotate(10deg); /* Aumenta el tamaño y rota 10 grados */
+      border-radius: 50%; /* Crea el efecto de corazón redondeando los bordes */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+      transition: transform 0.5s ease-in-out, border-radius 0.3s ease-in-out; /* Transiciones separadas */
+    }
+  
+  
+  button {
+      margin-top: 15px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      transition: all 0.4s ease-in-out; /* Transición suave para todas las propiedades */
+      
+    }
+    
+  button:hover {
+  
+    background-color: #3e8e41; /* Color de fondo al pasar el mouse */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+  
+  }
+    
+  #c2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto;   
+    height: 3%;
+  }
+  
+  #c3 {
+    position: static;
+    width: 300px; /* Ancho del banner */
+    height: auto; /* Altura automática */
+    padding: 20px;
+    background-color: #f0f0f0; /* Fondo claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el contenido */
+    transition: transform 0.3s ease; /* Suaviza la animación al pasar el mouse */
+    overflow: hidden; /* Evita que el contenido se desborde */
+  }
+  
+  .button-gris {
+    background-color: #f0f0f0; /* Gris claro */
+    color: #333;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  
+    /* Efecto hover */
+    &:hover {
+      background-color: #ddd;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transform: translateY(-2px);
+    }
+  
+    /* Animación de carga (opcional) */
+    &.loading {
+      animation: loading 1s infinite;
+    }
+  
+    @keyframes loading {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+  
+  form {
+    width: 100%; /* Ancho completo */
+    max-width: 600px; /* Máximo ancho opcional */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #8a2be2;
+    box-shadow: 0 2px 10px #3e0673(0, 0, 0, 0.1);
+  }
+  
+  div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%; /* Ancho completo */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  input[type="date"]:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  .promo-options {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px dashed #410a74;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    display: none; /* Se mostrará mediante JavaScript */
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #410a74;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Botón ocupa todo el ancho */
+  }
+  
+  button:hover {
+    background-color: #8a2be2;
+  }
+  
+  .c6 {
+    grid-column: 1/6;
+  }
+  
+  
+  
