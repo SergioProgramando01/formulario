@@ -1,0 +1,78 @@
+        body {
+            background-image: radial-gradient(circle at center, transparent 0%, 
+            transparent 90%, #f0f0f0 90%, #f0f0f0 100%);
+            background-size: 20px 20px;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        button {
+            background: linear-gradient(270deg, yellow, #0ed2ec, rgb(224, 13, 172));
+            animation: gradientAnimation 9s ease infinite;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: linear-gradient(270deg, yellow, #0ed2ec, rgb(224, 13, 172));
+            animation: gradientAnimation 9s ease infinite;
+        }
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Elija la opción</h1>
+
+    <button onclick="location.href='formulario.html'">Formulario</button>
+    <button onclick="location.href='pseudo.html'">Pseudo</button>
+    <button onclick="location.href='index.html'">Inicio</button>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Botones</title>
+    <style>
+        body {
+            background-image: radial-gradient(circle at center, transparent 0%, 
+            transparent 90%, #f0f0f0 90%, #f0f0f0 100%);
+            background-size: 20px 20px;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        button {
+            background: linear-gradient(270deg, yellow, #0ed2ec, rgb(224, 13, 172));
+            animation: gradientAnimation 9s ease infinite;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: linear-gradient(270deg, yellow, #0ed2ec, rgb(224, 13, 172));
+            animation: gradientAnimation 9s ease infinite;
+        }
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
